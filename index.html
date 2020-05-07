@@ -12,28 +12,34 @@
 
 <body>
 
-<div class="container">
-  <div class="row">
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <h2>Student Grade Table</h2>
+      </div>
+      <div class="col-3">
+        <h5>Average Grade <span class="badge badge-secondary"></span></h1>
+      </div>
+    </div>
     <div class="col-9">
-    <h2>Student Grade Table</h2>
-  </div>
-  <div class="col-3">
-    <h5>Average Grade <span class="badge badge-secondary"></span></h1>
-  </div>
-  </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"> Name</th>
+            <th scope="col">Course</th>
+            <th scope="col">Grade</th>
+          </tr>
+        <tbody>
 
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th scope="col"> Name</th>
-      <th scope="col">Course</th>
-      <th scope="col">Grade</th>
-    </tr>
-  <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-3">
+      <form>
 
-  </tbody>
-</table>
-</div>
+      </form>
+    </div>
+  </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
 <script src="components/app.js"></script>
