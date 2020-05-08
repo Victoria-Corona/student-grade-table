@@ -5,9 +5,9 @@
 <head>
   <title>Student Grade Table</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -21,30 +21,72 @@
         <h5>Average Grade <span class="badge badge-secondary"></span></h1>
       </div>
     </div>
-    <div class="col-9">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col"> Name</th>
-            <th scope="col">Course</th>
-            <th scope="col">Grade</th>
-          </tr>
-        <tbody>
+    <div class="row">
+      <div class="col-8">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col"> Name</th>
+              <th scope="col">Course</th>
+              <th scope="col">Grade</th>
+            </tr>
+          <tbody>
 
-        </tbody>
-      </table>
-    </div>
-    <div class="col-3">
-      <form>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-4">
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><img src="assets/people-fill.svg">
+                </span>
+              </div>
+              <div class="custom-file">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><img src="assets/card-list.svg">
+                </span>
+              </div>
+              <div class="custom-file">
+                <input type="text" class="form-control" name="course" placeholder="Course">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><img src="assets/clipboard-data.svg">
+                </span>
+              </div>
+              <div class="custom-file">
+                <input type="text" class="form-control" name="grade" placeholder="Grade">
+              </div>
+            </div>
+          </div>
+          <div>
+            <button type="submit" class="btn btn-outline-dark btn-sm">Add</button>
+            <button type="reset" class="btn btn-outline-dark btn-sm">Cancel</button>
+          </div>
 
-      </form>
+
+        </form>
+      </div>
     </div>
+
   </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-<script src="components/app.js"></script>
-<script src="components/grade-table.js"></script>
-<script src="components/page-header.js"></script>
-<script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script src="components/app.js"></script>
+  <script src="components/grade-table.js"></script>
+  <script src="components/page-header.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
