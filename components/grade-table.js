@@ -5,7 +5,11 @@ class GradeTable {
   updateGrades(grades){
     console.log(grades);
     var tbody = this.tableElement.querySelector("tbody");
-
+    tbody.innerHTML=""; //clears the content, okay to use here but not anywhere else because of XSS
+    // tbody.removeChild(tbody.firstChild); //node.removeChild(child); doesnt work because child doesn't exist yet
+    // while(tbody.firstChild) {
+    //   tbody.removeChild(tbody.firstChild);
+    // }
     for(var i = 0; i < grades.length; i++) {
       var tableRow1 = document.createElement("tr");
       var tableData1 = document.createElement("td");
