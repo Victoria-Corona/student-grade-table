@@ -1,3 +1,6 @@
+var form = document.querySelector("form");
+var gradeform = new GradeForm(form);
+
 var header = document.querySelector("header");
 var pageHeader = new PageHeader(header);
 
