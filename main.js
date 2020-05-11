@@ -5,8 +5,9 @@ var header = document.querySelector("header");
 var pageHeader = new PageHeader(header);
 
 var table = document.querySelector("table");
+var noGrades = document.querySelector("p.d-none");
 
-var gradeTableClass = new GradeTable(table);
+var gradeTableClass = new GradeTable(table, noGrades);
 
 var app = new App(gradeTableClass, pageHeader, gradeform);
 app.start();
