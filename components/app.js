@@ -23,8 +23,10 @@ class App {
       sum += grades[g].grade;
     }
 
-    var average = sum / grades.length;
-    console.log(average);
+    var average = Math.trunc(sum / grades.length);
+    if (grades.length === 0) {
+      average = "N/A";
+    }
     this.pageHeader.updateAverage(average);
 
     this.gradeTable.updateGrades(grades);
